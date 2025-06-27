@@ -3,7 +3,9 @@ package com.educacionIT.demos;
 import java.util.Scanner;
 
 import com.educacionIT.conexiones.Conexion;
+import com.educacionIT.daos.ClienteDAO;
 import com.educacionIT.daos.ComidaDAO;
+import com.educacionIT.entidades.Cliente;
 import com.educacionIT.entidades.Comida;
 
 public class AppPrincipal {
@@ -51,6 +53,23 @@ public class AppPrincipal {
 		ComidaDAO cDAO = new ComidaDAO();
 		cDAO.consultar();
 		
+		//Agregar nuevo cliente
+//		ClienteDAO nuevoCliente = new ClienteDAO();
+//		Cliente cliente1 = new Cliente(41785403, "Lucas", "lucas@hotmail.com");
+//		nuevoCliente.insertar(cliente1);
+		
+		//Eliminar cliente
+//		ClienteDAO.eliminarCliente(3);
+
+		//Actualizar cliente
+		
+//		Cliente clienteModificado = new Cliente(1, 42022311, "Iván Chanenko", "nuevo.email@hotmail.com");
+//		ClienteDAO dao = new ClienteDAO();
+//		dao.actualizar(clienteModificado);
+		
+		//LISTAR CLIENTES
+		ClienteDAO clientesDAO = new ClienteDAO();
+		clientesDAO.consultar();
 
 	}
 
